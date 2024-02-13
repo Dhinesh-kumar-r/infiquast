@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="icon" type="image/png" href="/assets/others/infi.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style2.css">
+    <style>
+
+    </style>
+</head>
+
+
+<body>
+
+    <nav class="navbar navbar-expand-lg  fixed-top nav-top bg">
+        <div class="container-fluid">
+            <img src="/assets/others/infi.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            <a class="navbar-brand" href="#"><span>Infi</span><span>Quast</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav  links ms-auto ml-auto mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="speaker.html">Speaker</a></li>
+                            <li><a class="dropdown-item" href="laptop.html">Laptop</a></li>
+                            <li><a class="dropdown-item" href="mobile.html">Mobile</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart1.html">Cart</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <button class="btn btn-outline-success log" type="submit" onclick="logout()">Logout</button>
+                    </form>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="navbar  fixed-top ns">
+        <div class="container-fluid">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Speakers
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="speaker.html">Samsung</a></li>
+                                <li><a class="dropdown-item" href="speaker.html">Sony</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Laptop
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="laptop.html">Lenovo</a></li>
+                                <li><a class="dropdown-item" href="laptop.html">Dell</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Mobiles
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="mobile.html">Apple</a></li>
+                                <li><a class="dropdown-item" href="mobile.html">Samsung</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="container contact">
+
+        <div class="row">
+            <div class="col-sm-6 col-md-5 col-lg-7">
+                <div class="contact-form">
+                    <h4>Send A Message</h4>
+                    <form action="https://formsubmit.co/caristography@gmail.com" method="POST">
+
+                        <input class="input" type="text" name="name" required placeholder="Name">
+                        <input class="input" type="email" name="email" required placeholder="Email">
+                        <input class="input" type="text" name="subject" required placeholder="Subject">
+                        <textarea class="input" name="message" required placeholder="Enter your Message"></textarea><br>
+                        <input type="submit" value="Submit" id="submit">
+                        <input type="hidden" name="_template" value="table">
+
+
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/Template/reply.html">
+                        <input type="hidden" name="_autoresponse"
+                            value="Thanks for contacting infiquast..we will contact soon">
+                        <input type="hidden" name="_cc" value="dhinesh08112001@gmail.com">
+
+
+                    </form>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-5 offset-md-2 col-lg-5 offset-lg-0">
+                <div id="contact-map"></div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7915.17197344635!2d-73.98945292562321!3d40.751514817318295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sin!4v1706274958482!5m2!1sen!2sin"
+                    width="350" height="350" style="border: 1px;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="container text-center photos p-5">
+        <div class="row align-items-start">
+          <div class="col">
+            <img src="/assets/others/email.png" alt="">infiquast@gmail.com
+          </div>
+          <div class="col">
+            <img src="/assets/others/call.png" alt="">76958 6553
+          </div>
+          <div class="col">
+           <img src="/assets/others/location.png" alt="">Newyork,USA
+          </div>
+        </div>
+      </div>
+
+
+      <footer>
+        <div class="container pt-5">
+          <div class="row align-items-center">
+            <div class="col-md-3 mb-4">
+              <img src="/assets/others/infi.png" alt="" width="150" height="150px">
+            </div>
+      
+            <div class="col-md-3 mb-4">
+              <h5>infiQuast</h5>
+              <ul class="list-unstyled">
+                <li><a href="contact.html">www.infiquast.com</a></li>
+                <li><a href="contact.html">infiquast@gmail.com</a></li>
+                <li><a href="contact.html">New York</a></li>
+                <li><a href="#">USA</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-md-3 mb-4">
+              <h5>Products</h5>
+              <ul class="list-unstyled">
+                <li><a href="#products">Mobile</a></li>
+                <li><a href="speaker.html">Home Theatre</a></li>
+                <li><a href="laptop.html">Laptop</a></li>
+                <li><a href="#">More</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-md-3 mb-4">
+              <h5>Who We Are</h5>
+              <ul class="list-unstyled">
+                <li><a href="about.html">About us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="contact.html">Customer Care</a></li>
+                <li><a href="#">1500 7545 7596</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      
+        <div class="container text-center p-5">
+          <div class="row">
+            <div class="col-12" style="color: white;">All Rights Reserved By Infiquast &copy; 2023</div>
+          </div>
+        </div>
+      </footer>
+      
+
+
+
+
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/4e364d091a.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
