@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speaker</title>
+    <link rel="icon" type="image/png" href="/assets/others/infi.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style2.css">
+        <style>
+            
+        </style>
+</head>
+
+
+<body>
+
+    <nav class="navbar navbar-expand-lg  fixed-top bg">
+        <div class="container-fluid">
+            <img src="/assets/others/infi.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+          <a class="navbar-brand" href="#"><span>Infi</span><span>Quast</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav links ms-auto ml-auto mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Products
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="speaker.html">Speaker</a></li>
+                  <li><a class="dropdown-item" href="laptop.html">Laptop</a></li>
+                  <li><a class="dropdown-item" href="mobile.html">Mobile</a></li>
+                 
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cart1.html">Cart</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <button class="btn btn-outline-success log" type="submit" onclick="logout()">Logout</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <nav class="navbar bg-body-tertiary fixed-top ns">
+        <div class="container-fluid">
+         
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+              
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+               
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Speakers
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#samsung">Samsung</a></li>
+                    <li><a class="dropdown-item" href="#sony">Sony</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Laptop
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="laptop.html">Lenovo</a></li>
+                      <li><a class="dropdown-item" href="laptop.html">Dell</a></li>
+                      </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Mobiles
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="mobile.html">Apple</a></li>
+                      <li><a class="dropdown-item" href="mobile.html">Samsung</a></li>
+                      </ul>
+                </li>
+            </ul>
+              
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+      <div id="carouselExampleAutoplaying slide" class="carousel slide" data-bs-ride="carousel" id="carouselExampleCaptions">
+
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+          
+        </div>
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="/assets/others/s-1.webp" class="d-block w-100" alt="img-1">
+            </div>
+
+            <div class="carousel-item">
+                <img src="/assets/others/s2.avif" class="d-block w-100" alt="img-2">
+            </div>
+
+            <div class="carousel-item">
+                <img src="/assets/others/s3.jpg" class="d-block w-100" alt="img-3">
+            </div>
+
+            <div class="carousel-item">
+                <img src="/assets/others/s4.jpg" class="d-block w-100" alt="img-3">
+            </div>
+
+           
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    </div>
+
+    <img src="/assets/others/sambg.jpg" alt=""  width="1227px" class="img-fluid" style="margin-top: 10px;">
+
+    <section class="sony">
+
+    <div class="container text-center p-5">
+        <div class="row align-items-start">
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="/assets/home theatre/sony1.png" class="card-img-top" alt="...">
+               
+                <div class="card-body">
+                    <h4><span class="badge bg-secondary">Sony-1</span></h4>
+                  <h5><span class="badge bg-secondary">Rs.6500</span></h5>
+                  <button class="btn btn-primary" onclick="order()" type="submit">Buy</button>
+                     <button class="btn btn-warning" onclick="addToCart('Sony 1','/assets/home theatre/sony1.png','65000')"  type="submit">Add To Cart</button>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="/assets/home theatre/sony2.png" class="card-img-top" alt="...">
+               
+                <div class="card-body">
+                    <h4><span class="badge bg-secondary">Sony-S2</span></h4>
+                  <h5><span class="badge bg-secondary">Rs.116000</span></h5>
+                  <button class="btn btn-primary" onclick="order()" type="submit">Buy</button>
+                  <button class="btn btn-warning" onclick="addToCart('Sony S2','/assets/home theatre/sony2.png','116000')"  type="submit">Add To Cart</button>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="/assets/home theatre/sony3.png" class="card-img-top" alt="...">
+               
+                <div class="card-body">
+                    <h4><span class="badge bg-secondary">Sony Victa</span></h4>
+                  <h5><span class="badge bg-secondary">Rs.17400</span></h5>
+                  <button class="btn btn-primary" onclick="order()" type="submit">Buy</button>
+                  <button class="btn btn-warning" onclick="addToCart('Sony Victa','/assets/home theatre/sony3.png','17400')"  type="submit">Add To Cart</button>
+
+                </div>
+              </div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container text-center p-5">
+        <div class="row align-items-start">
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="/assets/home theatre/sony4.png" class="card-img-top" alt="...">
+               
+                <div class="card-body">
+                    <h4><span class="badge bg-secondary">Sony Eri</span></h4>
+                  <h5><span class="badge bg-secondary">Rs.95000</span></h5>
+                  <button class="btn btn-primary" onclick="order()" type="submit">Buy</button>
+                  <button class="btn btn-warning" onclick="addToCart('Sony eri','/assets/home theatre/sony4.png','95000')"  type="submit">Add To Cart</button>
+
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="/assets/home theatre/sony5.png" class="card-img-top" alt="...">
+               
+                <div class="card-body">
+                    <h4><span class="badge bg-secondary">Sony Universe</span></h4>
+                  <h5><span class="badge bg-secondary">Rs.112422</span></h5>
+                  <button class="btn btn-primary" onclick="order()" type="submit">Buy</button>
+                  <button class="btn btn-warning" onclick="addToCart('Sony Universe','/assets/home theatre/sony5.png','112422')"  type="submit">Add To Cart</button>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="/assets/home theatre/sony6.png" class="card-img-top" alt="...">
+               
+                <div class="card-body">
+                    <h4><span class="badge bg-secondary">Sony Enjoy</span></h4>
+                  <h5><span class="badge bg-secondary">Rs.95000</span></h5>
+                  <button class="btn btn-primary" onclick="order()" type="submit">Buy</button>
+                  <button class="btn btn-warning" onclick="addToCart('Sony Enjoy','/assets/home theatre/sony6.png','95000')"  type="submit">Add To Cart</button>
+
+                </div>
+              </div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <img src="/assets/others/sony bg.jfif" alt=""  width="1227px" class="img-fluid" style="margin-top: 10px;">
+
+
+
+
+    <section class="Samsung">
+        
+    <div class="container text-center p-5">
+        <div class="row align-items-start">
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="/assets/home theatre/sam1.png" class="card-img-top" alt="...">
+               
+                <div class="card-body">
+                    <h4><span class="badge bg-secondary">Samsung Music</span></h4>
+                  <h5><span class="badge bg-secondary">Rs.95000</span></h5>
+                  <button class="btn btn-primary" onclick="order()" type="submit">Buy</button>
+                  <button class="btn btn-warning" onclick="addToCart('Samsung music 1','/assets/home theatre/sam1.png','95000')"  type="submit">Add To Cart</button>
+
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="/assets/home theatre/kindpng_144257.png" class="card-img-top" alt="...">
+               
+                <div class="card-body">
+                    <h4><span class="badge bg-secondary">Samsung Disco</span></h4>
+                  <h5><span class="badge bg-secondary">Rs.200000</span></h5>
+                  <button class="btn btn-primary" onclick="order()" type="submit">Buy</button>
+                  <button class="btn btn-warning" onclick="addToCart('Samsung disco','/assets/home theatre/sam2.png','200000')"  type="submit">Add To Cart</button>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="/assets/home theatre/blu-ray-disc-home-theater-systems-5-1-surround-sound-cinema-philips-home-theatre-448743a46e3564bf3c22595bb5802885.png" class="card-img-top" alt="...">
+               
+                <div class="card-body">
+                    <h4><span class="badge bg-secondary">Samsung Party</span></h4>
+                  <h5><span class="badge bg-secondary">Rs.115000</span></h5>
+                  <button class="btn btn-primary" onclick="order()" type="submit">Buy</button>
+                  <button class="btn btn-warning" onclick="addToCart('Samsung music party','/assets/home theatre/sam3.png','115000')"  type="submit">Add To Cart</button>
+
+                </div>
+              </div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container text-center p-5">
+        <div class="row align-items-start">
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="/assets/home theatre/sam4.png" class="card-img-top" alt="...">
+               
+                <div class="card-body">
+                    <h4><span class="badge bg-secondary">Samsung Escape</span></h4>
+                  <h5><span class="badge bg-secondary">Rs.13500</span></h5>
+                  <button class="btn btn-primary" onclick="order()" type="submit">Buy</button>
+                  <button class="btn btn-warning" onclick="addToCart('Samsung escape','/assets/home theatre/sam4.png','13500')"  type="submit">Add To Cart</button>
+
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="/assets/home theatre/sam5.png" class="card-img-top" alt="...">
+               
+                <div class="card-body">
+                    <h4><span class="badge bg-secondary">Samsung key</span></h4>
+                  <h5><span class="badge bg-secondary">Rs.4500</span></h5>
+                  <button class="btn btn-primary" onclick="order()" type="submit">Buy</button>
+                  <button class="btn btn-warning" onclick="addToCart('Samsung key','/assets/home theatre/sam5.png','45000')"  type="submit">Add To Cart</button>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="/assets/home theatre/sam6.png" class="card-img-top" alt="...">
+               
+                <div class="card-body">
+                    <h4><span class="badge bg-secondary">Samsung Vazio</span></h4>
+                  <h5><span class="badge bg-secondary">Rs.95000</span></h5>
+                  <button class="btn btn-primary" onclick="order()" type="submit">Buy</button>
+                  <button class="btn btn-warning" onclick="addToCart('Samsung vazio','/assets/home theatre/sam1.png','95000')"  type="submit">Add To Cart</button>
+
+                </div>
+              </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <footer>
+        <div class="container pt-5">
+          <div class="row align-items-center">
+            <div class="col-md-3 mb-4">
+              <img src="/assets/others/infi.png" alt="" width="150" height="150px">
+            </div>
+      
+            <div class="col-md-3 mb-4">
+              <h5>infiQuast</h5>
+              <ul class="list-unstyled">
+                <li><a href="contact.html">www.infiquast.com</a></li>
+                <li><a href="contact.html">infiquast@gmail.com</a></li>
+                <li><a href="contact.html">New York</a></li>
+                <li><a href="#">USA</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-md-3 mb-4">
+              <h5>Products</h5>
+              <ul class="list-unstyled">
+                <li><a href="#products">Mobile</a></li>
+                <li><a href="speaker.html">Home Theatre</a></li>
+                <li><a href="laptop.html">Laptop</a></li>
+                <li><a href="#">More</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-md-3 mb-4">
+              <h5>Who We Are</h5>
+              <ul class="list-unstyled">
+                <li><a href="about.html">About us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="contact.html">Customer Care</a></li>
+                <li><a href="#">1500 7545 7596</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      
+        <div class="container text-center p-5">
+          <div class="row">
+            <div class="col-12" style="color: white;">All Rights Reserved By Infiquast &copy; 2023</div>
+          </div>
+        </div>
+      </footer>
+      
+  
+
+
+
+
+
+   
+
+    
+
+<script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+
